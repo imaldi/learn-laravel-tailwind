@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <title>Laravel</title>
 
         <!-- Fonts -->
@@ -20,7 +20,21 @@
             }
         </style>
     </head>
-    <body class="antialiased">
+    <body>
+        <h1 class="text-3xl font-bold underline">
+            Hello world!
+          </h1>
+          <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
+            <div class="shrink-0">
+              <img class="h-12 w-12" src="/img/logo.svg" alt="ChitChat Logo">
+            </div>
+            <div>
+              <div class="text-xl font-medium text-black">ChitChat</div>
+              <p class="text-slate-500">You have a new message!</p>
+            </div>
+          </div>
+    </body>
+    {{-- <body class="antialiased">
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
@@ -128,5 +142,5 @@
                 </div>
             </div>
         </div>
-    </body>
+    </body> --}}
 </html>
